@@ -1,5 +1,5 @@
 import { NextResponse, type NextRequest } from 'next/server';
-import db from '@/lib/db';
+import db from '@/database';
 
 export async function POST(request: NextRequest, { params }: { params: { id: string } }) {
   const { articulo = '', precio = 0, paid = 0 } = await request.json();

@@ -1,5 +1,5 @@
 import { NextResponse, type NextRequest } from 'next/server';
-import db from '@/lib/db';
+import db from '@/database';
 
 interface Fixed {
   id: number;

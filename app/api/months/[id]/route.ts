@@ -1,5 +1,5 @@
 import { NextResponse, type NextRequest } from 'next/server';
-import db from '@/lib/db';
+import db from '@/database';
 
 function computeTotals(monthId: number): { totalFijos: number; totalVariable: number; totalGastos: number } {
   const totalFijos = (
